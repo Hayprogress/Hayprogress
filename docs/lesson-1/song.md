@@ -4,21 +4,15 @@
 
 <div style="margin: 20px 0;">
   <audio controls style="width: 100%; max-width: 500px;">
-    <source src="song.mp3" type="audio/mpeg">
+    <source src="Բարի_լույս,_բարի_օր.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
 
 <table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
-  <!-- Your parallel text table goes here -->
-</table>
-
-*Style: Upbeat & Repetitive Acoustic Rhyme*
-
-<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
   <thead>
     <tr>
-      <th style="width: 50%; text-align: left; padding: 8px; border-bottom: 2px solid #ccc;">Eastern Armenian</th>
+      <th style="width: 50%; text-align: left; padding: 8px; border-bottom: 2px solid #ccc;">Eastern Armenian Lyrics</th>
       <th style="width: 50%; text-align: left; padding: 8px; border-bottom: 2px solid #ccc;">English Translation</th>
     </tr>
   </thead>
@@ -95,6 +89,107 @@
         Ցտեսություն։<br>
         Բարև, ողջույն,<br>
         Բարև, ողջույն։<br>
+        Ապրել, ուտել,<br>
+        Մենք միասին։<br>
+        Ես, դու, դուք, մենք,<br>
+        Նա, նրանք։<br>
+        Ինչ, ինչպես,<br>
+        Իսկ, նույնպես,<br>
+        Ուրախ, շնորհակալություն,<br>
+        Առայժմ։<br>
+        Կհանդիպենք,<br>
+        Ցտեսություն,<br>
+        Բարի գիշեր,<br>
+        Առայժմ։
+      </td>
+      <td style="vertical-align: top; padding: 8px;">
+        <b>[Verse 1]</b><br>
+        Good morning, good morning,<br>
+        Good morning, good morning.<br>
+        The sun has come,<br>
+        Good day.<br>
+        We say together:<br>
+        Good day.<br><br>
+        <b>[Chorus]</b><br>
+        Hello, greetings,<br>
+        Hello, greetings.<br>
+        Good day,<br>
+        Good evening.<br>
+        Good night,<br>
+        Good night.<br>
+        Goodbye,<br>
+        See you for now.<br><br>
+        <b>[Verse 2]</b><br>
+        — What is your name?<br>
+        — My name is Anna.<br>
+        — What is your name?<br>
+        — My name is Armen.<br><br>
+        <b>[Chorus]</b><br>
+        — How are you?<br>
+        — How are you?<br>
+        — I am well, thank you.<br>
+        — I am well too,<br>
+        I am well too.<br>
+        Thank you,<br>
+        Thank you.<br><br>
+        <b>[Verse 3]</b><br>
+        I am glad to meet you.<br>
+        I am glad to meet you.<br>
+        It is very nice to meet you.<br>
+        We are together,<br>
+        We are also together,<br>
+        We are glad today.<br><br>
+        <b>[Verse 4]</b><br>
+        You and I,<br>
+        We are together,<br>
+        You and he/she,<br>
+        They too.<br>
+        Boy, child,<br>
+        Teacher,<br>
+        Book and table—<br>
+        In the room.<br>
+        Fridge,<br>
+        House and sun,<br>
+        Morning,<br>
+        One minute.<br>
+        To live, to eat,<br>
+        We are together,<br>
+        We are glad,<br>
+        The day is good.<br><br>
+        <b>[Bridge]</b><br>
+        — How are you?<br>
+        — How are you?<br>
+        — I am well, thank you.<br>
+        And you are also<br>
+        Glad,<br>
+        And we are also<br>
+        Glad.<br><br>
+        <b>[Final Chorus]</b><br>
+        Good morning, good morning,<br>
+        Good day, good evening,<br>
+        Good night,<br>
+        Thank you.<br>
+        We will meet,<br>
+        Goodbye.<br>
+        Hello, greetings,<br>
+        Hello, greetings.<br>
+        To live, to eat,<br>
+        We are together.<br>
+        I, you, you, we,<br>
+        He/she, they.<br>
+        What, how,<br>
+        And, too,<br>
+        Glad, thank you,<br>
+        See you for now.<br>
+        We will meet,<br>
+        Goodbye,<br>
+        Good night,<br>
+        See you for now.
+      </td>
+    </tr>
+  </tbody>
+</table>
+Բարև, ողջույն։<br>
         Ապրել, ուտել,<br>
         Մենք միասին։<br>
         Ես, դու, դուք, մենք,<br>
