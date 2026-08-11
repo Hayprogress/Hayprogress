@@ -1,0 +1,14 @@
+site_name: HayProgress
+site_description: My Eastern Armenian Language Journey
+
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: blue
+  features:
+    - navigation.tabs
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.superfences
