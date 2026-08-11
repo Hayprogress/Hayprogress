@@ -2,6 +2,19 @@
 
 *Style: Upbeat & Repetitive Acoustic Rhyme*
 
+<div style="margin: 20px 0;">
+  <audio controls style="width: 100%; max-width: 500px;">
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+  <!-- Your parallel text table goes here -->
+</table>
+
+*Style: Upbeat & Repetitive Acoustic Rhyme*
+
 <table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
   <thead>
     <tr>
