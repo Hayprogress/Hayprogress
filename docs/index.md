@@ -15,3 +15,8 @@ My personal learning journal tracking Eastern Armenian vocabulary, songs, and st
 * [Superior / Mastery](avc/superior-mastery/index.md) (Lessons 1–8)
 * [Conversational Part 1](avc/conversational-1/index.md) (Lessons 1–8)
 * [Conversational Part 2](avc/conversational-2/index.md) (Lessons 1–8)
+* [📱 AYoLingo](ayolingo/index.md) — Gamified vocabulary practice & drills.
+* [🎴 Memrise](memrise/index.md) — SRS flashcards and phrase sets.
+* [🐝 Ling App](ling/index.md) — Interactive language lessons & dialogues.
+* [🎧 50 Languages](50-languages/index.md) — Parallel text & topical audio lessons.
+* [🎙️ Pimsleur](pimsleur/index.md) — Audio-based conversational drills.
