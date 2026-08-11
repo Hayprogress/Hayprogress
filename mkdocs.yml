@@ -1,5 +1,6 @@
 site_name: HayProgress
 site_description: My Eastern Armenian Language Journey
+site_url: https://hayprogress.github.io/Hayprogress/
 
 theme:
   name: material
