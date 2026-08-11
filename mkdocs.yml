@@ -14,7 +14,7 @@ theme:
 
 nav:
   - Home: index.md
-  - AVC:
+  - AVC Eastern Armenian:
       - Beginner:
           - Overview: avc/beginner/index.md
           - Lesson 1:
@@ -38,6 +38,96 @@ nav:
           - Lesson 6: avc/elementary/lesson-6/index.md
           - Lesson 7: avc/elementary/lesson-7/index.md
           - Lesson 8: avc/elementary/lesson-8/index.md
+      - Pre-Intermediate:
+          - Overview: avc/pre-intermediate/index.md
+          - Lesson 1: avc/pre-intermediate/lesson-1/index.md
+          - Lesson 2: avc/pre-intermediate/lesson-2/index.md
+          - Lesson 3: avc/pre-intermediate/lesson-3/index.md
+          - Lesson 4: avc/pre-intermediate/lesson-4/index.md
+          - Lesson 5: avc/pre-intermediate/lesson-5/index.md
+          - Lesson 6: avc/pre-intermediate/lesson-6/index.md
+          - Lesson 7: avc/pre-intermediate/lesson-7/index.md
+          - Lesson 8: avc/pre-intermediate/lesson-8/index.md
+      - Intermediate:
+          - Overview: avc/intermediate/index.md
+          - Lesson 1: avc/intermediate/lesson-1/index.md
+          - Lesson 2: avc/intermediate/lesson-2/index.md
+          - Lesson 3: avc/intermediate/lesson-3/index.md
+          - Lesson 4: avc/intermediate/lesson-4/index.md
+          - Lesson 5: avc/intermediate/lesson-5/index.md
+          - Lesson 6: avc/intermediate/lesson-6/index.md
+          - Lesson 7: avc/intermediate/lesson-7/index.md
+          - Lesson 8: avc/intermediate/lesson-8/index.md
+      - Upper Intermediate:
+          - Overview: avc/upper-intermediate/index.md
+          - Lesson 1: avc/upper-intermediate/lesson-1/index.md
+          - Lesson 2: avc/upper-intermediate/lesson-2/index.md
+          - Lesson 3: avc/upper-intermediate/lesson-3/index.md
+          - Lesson 4: avc/upper-intermediate/lesson-4/index.md
+          - Lesson 5: avc/upper-intermediate/lesson-5/index.md
+          - Lesson 6: avc/upper-intermediate/lesson-6/index.md
+          - Lesson 7: avc/upper-intermediate/lesson-7/index.md
+          - Lesson 8: avc/upper-intermediate/lesson-8/index.md
+      - Pre-Advanced:
+          - Overview: avc/pre-advanced/index.md
+          - Lesson 1: avc/pre-advanced/lesson-1/index.md
+          - Lesson 2: avc/pre-advanced/lesson-2/index.md
+          - Lesson 3: avc/pre-advanced/lesson-3/index.md
+          - Lesson 4: avc/pre-advanced/lesson-4/index.md
+          - Lesson 5: avc/pre-advanced/lesson-5/index.md
+          - Lesson 6: avc/pre-advanced/lesson-6/index.md
+          - Lesson 7: avc/pre-advanced/lesson-7/index.md
+          - Lesson 8: avc/pre-advanced/lesson-8/index.md
+      - Advanced:
+          - Overview: avc/advanced/index.md
+          - Lesson 1: avc/advanced/lesson-1/index.md
+          - Lesson 2: avc/advanced/lesson-2/index.md
+          - Lesson 3: avc/advanced/lesson-3/index.md
+          - Lesson 4: avc/advanced/lesson-4/index.md
+          - Lesson 5: avc/advanced/lesson-5/index.md
+          - Lesson 6: avc/advanced/lesson-6/index.md
+          - Lesson 7: avc/advanced/lesson-7/index.md
+          - Lesson 8: avc/advanced/lesson-8/index.md
+      - Proficiency:
+          - Overview: avc/proficiency/index.md
+          - Lesson 1: avc/proficiency/lesson-1/index.md
+          - Lesson 2: avc/proficiency/lesson-2/index.md
+          - Lesson 3: avc/proficiency/lesson-3/index.md
+          - Lesson 4: avc/proficiency/lesson-4/index.md
+          - Lesson 5: avc/proficiency/lesson-5/index.md
+          - Lesson 6: avc/proficiency/lesson-6/index.md
+          - Lesson 7: avc/proficiency/lesson-7/index.md
+          - Lesson 8: avc/proficiency/lesson-8/index.md
+      - Superior / Mastery:
+          - Overview: avc/superior-mastery/index.md
+          - Lesson 1: avc/superior-mastery/lesson-1/index.md
+          - Lesson 2: avc/superior-mastery/lesson-2/index.md
+          - Lesson 3: avc/superior-mastery/lesson-3/index.md
+          - Lesson 4: avc/superior-mastery/lesson-4/index.md
+          - Lesson 5: avc/superior-mastery/lesson-5/index.md
+          - Lesson 6: avc/superior-mastery/lesson-6/index.md
+          - Lesson 7: avc/superior-mastery/lesson-7/index.md
+          - Lesson 8: avc/superior-mastery/lesson-8/index.md
+      - Conversational Part 1:
+          - Overview: avc/conversational-1/index.md
+          - Lesson 1: avc/conversational-1/lesson-1/index.md
+          - Lesson 2: avc/conversational-1/lesson-2/index.md
+          - Lesson 3: avc/conversational-1/lesson-3/index.md
+          - Lesson 4: avc/conversational-1/lesson-4/index.md
+          - Lesson 5: avc/conversational-1/lesson-5/index.md
+          - Lesson 6: avc/conversational-1/lesson-6/index.md
+          - Lesson 7: avc/conversational-1/lesson-7/index.md
+          - Lesson 8: avc/conversational-1/lesson-8/index.md
+      - Conversational Part 2:
+          - Overview: avc/conversational-2/index.md
+          - Lesson 1: avc/conversational-2/lesson-1/index.md
+          - Lesson 2: avc/conversational-2/lesson-2/index.md
+          - Lesson 3: avc/conversational-2/lesson-3/index.md
+          - Lesson 4: avc/conversational-2/lesson-4/index.md
+          - Lesson 5: avc/conversational-2/lesson-5/index.md
+          - Lesson 6: avc/conversational-2/lesson-6/index.md
+          - Lesson 7: avc/conversational-2/lesson-7/index.md
+          - Lesson 8: avc/conversational-2/lesson-8/index.md
 
 markdown_extensions:
   - pymdownx.superfences
