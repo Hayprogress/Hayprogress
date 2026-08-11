@@ -128,6 +128,10 @@ nav:
           - Lesson 6: avc/conversational-2/lesson-6/index.md
           - Lesson 7: avc/conversational-2/lesson-7/index.md
           - Lesson 8: avc/conversational-2/lesson-8/index.md
-
+  - AYoLingo: ayolingo/index.md
+  - Memrise: memrise/index.md
+  - Ling: ling/index.md
+  - 50 Languages: 50-languages/index.md
+  - Pimsleur: pimsleur/index.md
 markdown_extensions:
   - pymdownx.superfences
