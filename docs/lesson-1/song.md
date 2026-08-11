@@ -3,11 +3,12 @@
 *Style: Upbeat & Repetitive Acoustic Rhyme*
 
 <div style="margin: 20px 0;">
-  <audio controls style="width: 100%; max-width: 500px;">
-    <source src="Բարի_լույս,_բարի_օր.mp3" type="audio/mpeg">
+  <audio controls preload="metadata" style="width: 100%; max-width: 500px;">
+    <source src="./bari-luys.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
+
 
 <table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
   <thead>
