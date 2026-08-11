@@ -9,7 +9,35 @@ theme:
     accent: blue
   features:
     - navigation.tabs
+    - navigation.indexes
     - content.code.copy
+
+nav:
+  - Home: index.md
+  - AVC:
+      - Beginner:
+          - Overview: avc/beginner/index.md
+          - Lesson 1:
+              - Overview: avc/beginner/lesson-1/index.md
+              - Song: avc/beginner/lesson-1/song.md
+              - Story: avc/beginner/lesson-1/story.md
+          - Lesson 2: avc/beginner/lesson-2/index.md
+          - Lesson 3: avc/beginner/lesson-3/index.md
+          - Lesson 4: avc/beginner/lesson-4/index.md
+          - Lesson 5: avc/beginner/lesson-5/index.md
+          - Lesson 6: avc/beginner/lesson-6/index.md
+          - Lesson 7: avc/beginner/lesson-7/index.md
+          - Lesson 8: avc/beginner/lesson-8/index.md
+      - Elementary:
+          - Overview: avc/elementary/index.md
+          - Lesson 1: avc/elementary/lesson-1/index.md
+          - Lesson 2: avc/elementary/lesson-2/index.md
+          - Lesson 3: avc/elementary/lesson-3/index.md
+          - Lesson 4: avc/elementary/lesson-4/index.md
+          - Lesson 5: avc/elementary/lesson-5/index.md
+          - Lesson 6: avc/elementary/lesson-6/index.md
+          - Lesson 7: avc/elementary/lesson-7/index.md
+          - Lesson 8: avc/elementary/lesson-8/index.md
 
 markdown_extensions:
   - pymdownx.superfences
