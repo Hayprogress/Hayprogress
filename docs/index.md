@@ -1,5 +1,9 @@
 # Welcome to HayProgress 🇦🇲
 
-## AVC (Armenian Virtual College)
-### Beginner Level
-* [Lesson 1: Greetings & Basics](avc/beginner/lesson-1/index.md)
+My personal learning journal tracking my Eastern Armenian vocabulary, songs, and stories.
+
+## Lessons Index
+
+* [Lesson 1: Greetings & Basics](lesson-1/index.md)
+  * [🎵 Song: Բարի լույս, բարի առավոտ](lesson-1/song.md)
+  * [📖 Story: Աննան և Արմենը](lesson-1/story.md)
