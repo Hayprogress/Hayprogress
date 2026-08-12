@@ -10,17 +10,25 @@ theme:
   features:
     - navigation.tabs
     - navigation.indexes
+    - navigation.top
     - content.code.copy
 
 nav:
   - Home: index.md
   - AVC Eastern Armenian:
+      - Overview: avc/index.md
       - Beginner:
           - Overview: avc/beginner/index.md
           - Lesson 1:
               - Overview: avc/beginner/lesson-1/index.md
+              - Alphabet: avc/beginner/lesson-1/alphabet.md
+              - Grammar: avc/beginner/lesson-1/grammar.md
+              - Thematic Words: avc/beginner/lesson-1/thematic-words.md
+              - Dialogues: avc/beginner/lesson-1/dialogues.md
+              - Vocabulary: avc/beginner/lesson-1/vocabulary.md
               - Song: avc/beginner/lesson-1/song.md
               - Story: avc/beginner/lesson-1/story.md
+              - Resources: avc/beginner/lesson-1/resources.md
           - Lesson 2: avc/beginner/lesson-2/index.md
           - Lesson 3: avc/beginner/lesson-3/index.md
           - Lesson 4: avc/beginner/lesson-4/index.md
@@ -30,7 +38,15 @@ nav:
           - Lesson 8: avc/beginner/lesson-8/index.md
       - Elementary:
           - Overview: avc/elementary/index.md
-          - Lesson 1: avc/elementary/lesson-1/index.md
+          - Lesson 1:
+              - Overview: avc/elementary/lesson-1/index.md
+              - Grammar: avc/elementary/lesson-1/grammar.md
+              - Thematic Words: avc/elementary/lesson-1/thematic-words.md
+              - Dialogues: avc/elementary/lesson-1/dialogues.md
+              - Vocabulary: avc/elementary/lesson-1/vocabulary.md
+              - Song: avc/elementary/lesson-1/song.md
+              - Story: avc/elementary/lesson-1/story.md
+              - Resources: avc/elementary/lesson-1/resources.md
           - Lesson 2: avc/elementary/lesson-2/index.md
           - Lesson 3: avc/elementary/lesson-3/index.md
           - Lesson 4: avc/elementary/lesson-4/index.md
@@ -133,5 +149,6 @@ nav:
   - Ling: ling/index.md
   - 50 Languages: 50-languages/index.md
   - Pimsleur: pimsleur/index.md
+
 markdown_extensions:
   - pymdownx.superfences
