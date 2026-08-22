@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Armenian Verb Conjugation Drill</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --accent: #38bdf8;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --correct: #22c55e;
+      --wrong: #ef4444;
+      --border: #334155;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      margin: 0;
+    }
+    .container {
+      width: 100%;
+      max-width: 650px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3);
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .streak {
+      color: var(--accent);
+      font-weight: bold;
+    }
+    .prompt-box {
+      text-align: center;
+      margin: 24px 0;
+    }
+    .infinitive {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .meaning {
+      font-size: 1.1rem;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    .tags {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .tag {
+      background: var(--border);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .tag.polarity {
+      background: #475569;
+    }
+    .input-row {
+      display: flex;
+      gap: 8px;
+    }
+    input[type="text"] {
+      flex: 1;
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #0b1120;
+      color: var(--text);
+      font-size: 1.1rem;
+      outline: none;
+    }
+    input[type="text"]:focus {
+      border-color: var(--accent);
+    }
+    button {
+      background: var(--accent);
+      color: #0f172a;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    .feedback {
+      margin-top: 16px;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 1rem;
+      display: none;
+    }
+    .feedback.correct {
+      display: block;
+      background: rgba(34, 197, 94, 0.15);
+      color: var(--correct);
+      border: 1px solid var(--correct);
+    }
+    .feedback.wrong {
+      display: block;
+      background: rgba(239, 68, 68, 0.15);
+      color: var(--wrong);
+      border: 1px solid var(--wrong);
+    }
+    .reference {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .reference details summary {
+      cursor: pointer;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+    <div class="header">
+      <span>Conjugation Drill (Lessons 1–8)</span>
+      <span class="streak" id="score">Score: 0 | Streak: 0</span>
+    </div>
+
+    <div class="prompt-box">
+      <div class="infinitive" id="verb">...</div>
+      <div class="meaning" id="translation">...</div>
+      <div class="tags">
+        <div class="tag" id="tense-tag">Tense</div>
+        <div class="tag" id="person-tag">Person</div>
+        <div class="tag polarity" id="polarity-tag">Affirmative</div>
+      </div>
+    </div>
+
+    <form id="drill-form" onsubmit="handleCheck(event)">
+      <div class="input-row">
+        <input type="text" id="user-input" placeholder="Type Eastern Armenian..." autocomplete="off" autofocus>
+        <button type="submit" id="submit-btn">Check</button>
+      </div>
+    </form>
+
+    <div id="feedback-box" class="feedback"></div>
+  </div>
+
+  <div class="card reference">
+    <details>
+      <summary>Grammar Rule Quick Reference</summary>
+      <ul>
+        <li><strong>Auxiliary Verb (Present):</strong> եմ, ես, է, ենք, եք, են | Negative: չեմ, չես, չի, չենք, չեք, չեն</li>
+        <li><strong>Present Tense:</strong> Verb stem + <strong>ում</strong> + Auxiliary (e.g., կարդում եմ / չեմ կարդում)</li>
+        <li><strong>Past Participle (-ել):</strong> Verb stem + <strong>ել</strong> + Auxiliary (e.g., ապրել եմ / չեմ ապրել)</li>
+        <li><strong>Past Participle (-ալ):</strong> Verb stem + <strong>ացել</strong> + Auxiliary (e.g., կարդացել եմ / չեմ կարդացել)</li>
+        <li><strong>Future Tense:</strong> Infinitive + <strong>ու</strong> + Auxiliary (e.g., գրելու եմ / չեմ գրելու)</li>
+      </ul>
+    </details>
+  </div>
+</div>
+
+<script>
+const verbs = [
+  { inf: "ապրել", eng: "to live", type: "el" },
+  { inf: "ծանոթանալ", eng: "to meet / get acquainted", type: "al" },
+  { inf: "ուտել", eng: "to eat", type: "el" },
+  { inf: "իջնել", eng: "to go down", type: "el" },
+  { inf: "կարդալ", eng: "to read", type: "al" },
+  { inf: "ներկայանալ", eng: "to introduce oneself", type: "al" },
+  { inf: "ցանկանալ", eng: "to wish", type: "al" },
+  { inf: "գրել", eng: "to write", type: "el" },
+  { inf: "խմել", eng: "to drink", type: "el" },
+  { inf: "երգել", eng: "to sing", type: "el" },
+  { inf: "պարել", eng: "to dance", type: "el" },
+  { inf: "վազել", eng: "to run", type: "el" },
+  { inf: "մտածել", eng: "to think", type: "el" },
+  { inf: "զգալ", eng: "to feel", type: "al" },
+  { inf: "գնալ", eng: "to go", type: "al" },
+  { inf: "լսել", eng: "to listen", type: "el" },
+  { inf: "աշխատել", eng: "to work", type: "el" },
+  { inf: "դասավանդել", eng: "to teach", type: "el" },
+  { inf: "խաղալ", eng: "to play", type: "al" },
+  { inf: "սովորել", eng: "to study / learn", type: "el" },
+  { inf: "օգնել", eng: "to help", type: "el" },
+  { inf: "գնել", eng: "to buy", type: "el" },
+  { inf: "մտնել", eng: "to enter", type: "el" },
+  { inf: "լվանալ", eng: "to wash", type: "al" },
+  { inf: "գտնել", eng: "to find", type: "el" },
+  { inf: "եփել", eng: "to cook", type: "el" },
+  { inf: "զբոսնել", eng: "to take a walk", type: "el" },
+  { inf: "ծանոթացնել", eng: "to introduce", type: "el" },
+  { inf: "ժամանել", eng: "to arrive", type: "el" },
+  { inf: "խոսել", eng: "to speak", type: "el" },
+  { inf: "քայլել", eng: "to walk", type: "el" },
+  { inf: "մոտենալ", eng: "to approach", type: "al" },
+  { inf: "զարմանալ", eng: "to be surprised", type: "al" },
+  { inf: "թռչել", eng: "to fly", type: "el" },
+  { inf: "ճաշել", eng: "to dine", type: "el" },
+  { inf: "ցավել", eng: "to ache", type: "el" },
+  { inf: "ամրագրել", eng: "to book", type: "el" },
+  { inf: "այցելել", eng: "to visit", type: "el" },
+  { inf: "անցկացնել", eng: "to pass / spend", type: "el" },
+  { inf: "հանգստանալ", eng: "to rest", type: "al" },
+  { inf: "հաշվառել", eng: "to register / check", type: "el" },
+  { inf: "ձևակերպել", eng: "to formulate / process", type: "el" },
+  { inf: "ճամփորդել", eng: "to travel", type: "el" },
+  { inf: "մեկնել", eng: "to depart", type: "el" },
+  { inf: "մնալ", eng: "to stay", type: "al" },
+  { inf: "նախաճաշել", eng: "to have breakfast", type: "el" },
+  { inf: "վերցնել", eng: "to take", type: "el" },
+  { inf: "փակել", eng: "to close", type: "el" }
+];
+
+const persons = [
+  { label: "Ես (1st Sing.)", pos: "եմ", neg: "չեմ" },
+  { label: "Դու (2nd Sing.)", pos: "ես", neg: "չես" },
+  { label: "Նա (3rd Sing.)", pos: "է", neg: "չի" },
+  { label: "Մենք (1st Plur.)", pos: "ենք", neg: "չենք" },
+  { label: "Դուք (2nd Plur.)", pos: "եք", neg: "չեք" },
+  { label: "Նրանք (3rd Plur.)", pos: "են", neg: "չեն" }
+];
+
+const tenses = ["Present", "Past", "Future"];
+const polarities = ["Affirmative", "Negative"];
+
+let currentQuestion = null;
+let score = 0;
+let streak = 0;
+let answered = false;
+
+function generateTarget(verbObj, personObj, tense, polarity) {
+  let participle = "";
+  const stem = verbObj.inf.slice(0, -2);
+
+  if (tense === "Present") {
+    participle = stem + "ում";
+  } else if (tense === "Past") {
+    participle = verbObj.type === "al" ? stem + "ացել" : stem + "ել";
+  } else if (tense === "Future") {
+    participle = verbObj.inf + "ու";
+  }
+
+  if (polarity === "Affirmative") {
+    return `${participle} ${personObj.pos}`;
+  } else {
+    return `${personObj.neg} ${participle}`;
+  }
+}
+
+function nextQuestion() {
+  answered = false;
+  const verb = verbs[Math.floor(Math.random() * verbs.length)];
+  const person = persons[Math.floor(Math.random() * persons.length)];
+  const tense = tenses[Math.floor(Math.random() * tenses.length)];
+  const polarity = polarities[Math.floor(Math.random() * polarities.length)];
+
+  currentQuestion = {
+    verb,
+    person,
+    tense,
+    polarity,
+    answer: generateTarget(verb, person, tense, polarity)
+  };
+
+  document.getElementById("verb").textContent = verb.inf;
+  document.getElementById("translation").textContent = verb.eng;
+  document.getElementById("tense-tag").textContent = tense;
+  document.getElementById("person-tag").textContent = person.label;
+  document.getElementById("polarity-tag").textContent = polarity;
+
+  const input = document.getElementById("user-input");
+  input.value = "";
+  input.disabled = false;
+  input.focus();
+
+  const feedback = document.getElementById("feedback-box");
+  feedback.className = "feedback";
+  feedback.textContent = "";
+
+  document.getElementById("submit-btn").textContent = "Check";
+}
+
+function handleCheck(e) {
+  e.preventDefault();
+  if (answered) {
+    nextQuestion();
+    return;
+  }
+
+  const input = document.getElementById("user-input");
+  const userVal = input.value.trim().replace(/\s+/g, ' ');
+  const feedback = document.getElementById("feedback-box");
+
+  if (userVal === currentQuestion.answer) {
+    score += 10;
+    streak += 1;
+    feedback.className = "feedback correct";
+    feedback.textContent = "Ճիշտ է (Correct)! Well done.";
+  } else {
+    streak = 0;
+    feedback.className = "feedback wrong";
+    feedback.textContent = `Սխալ է: Correct answer: ${currentQuestion.answer}`;
+  }
+
+  document.getElementById("score").textContent = `Score: ${score} | Streak: ${streak}`;
+  document.getElementById("submit-btn").textContent = "Next (Enter)";
+  answered = true;
+}
+
+nextQuestion();
+</script>
+
+</body>
+</html>
