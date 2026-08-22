@@ -10,4 +10,4 @@ Select a lesson to review study materials:
 * [Lesson 6](lesson-6/index.md)
 * [Lesson 7](lesson-7/index.md)
 * [Lesson 8](lesson-8/index.md)
-* [Lesson 8](drill/index.md)
+* [Conjugation drill](drill/index.md)
