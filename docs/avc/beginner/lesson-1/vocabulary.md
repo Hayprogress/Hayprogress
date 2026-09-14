@@ -1,39 +1,39 @@
 # Al 102 - Lesson 1 Vocabulary
 
-1. անուն - name[span_74](start_span)[span_74](end_span)
-2. ապրել - to live[span_75](start_span)[span_75](end_span)
-3. կհանդիպենք / առայժմ - see you later[span_76](start_span)[span_76](end_span)
-4. առավոտ - morning[span_77](start_span)[span_77](end_span)
-5. արև - sun[span_78](start_span)[span_78](end_span)
-6. բարի առավոտ - good morning[span_79](start_span)[span_79](end_span)
-7. բարի գիշեր - good night[span_80](start_span)[span_80](end_span)
-8. բարի երեկո - good evening[span_81](start_span)[span_81](end_span)
-9. բարի լույս - good morning[span_82](start_span)[span_82](end_span)
-10. բարի օր - good day[span_83](start_span)[span_83](end_span)
-11. բարև - hi / hello[span_84](start_span)[span_84](end_span)
-12. դու - you[span_85](start_span)[span_85](end_span)
-13. դուք - you (pl.)[span_86](start_span)[span_86](end_span)
-14. գիրք - book[span_87](start_span)[span_87](end_span)
-15. ես - I[span_88](start_span)[span_88](end_span)
-16. երեխա - child[span_89](start_span)[span_89](end_span)
-17. ինչ - what[span_90](start_span)[span_90](end_span)
-18. ինչպես - how[span_91](start_span)[span_91](end_span)
-19. իսկ - and, too[span_92](start_span)[span_92](end_span)
-20. ծանոթանալ - to meet[span_93](start_span)[span_93](end_span)
-21. կհանդիպենք - will meet[span_94](start_span)[span_94](end_span)
-22. մենք - we[span_95](start_span)[span_95](end_span)
-23. նա - he / she[span_96](start_span)[span_96](end_span)
-24. նրանք - they[span_97](start_span)[span_97](end_span)
-25. նույնպես - too[span_98](start_span)[span_98](end_span)
-26. շնորհակալություն - thank you[span_99](start_span)[span_99](end_span)
-27. ողջույն - hi / hello[span_100](start_span)[span_100](end_span)
-28. սառնարան - refrigerator[span_101](start_span)[span_101](end_span)
-29. սեղան - table[span_102](start_span)[span_102](end_span)
-30. սենյակ - room[span_103](start_span)[span_103](end_span)
-31. տղա - boy[span_104](start_span)[span_104](end_span)
-32. տուն - house[span_105](start_span)[span_105](end_span)
-33. րոպե - minute[span_106](start_span)[span_106](end_span)
-34. ցտեսություն - goodbye[span_107](start_span)[span_107](end_span)
-35. ուսուցիչ - teacher[span_108](start_span)[span_108](end_span)
-36. ուտել - to eat[span_109](start_span)[span_109](end_span)
-37. ուրախ - glad[span_110](start_span)[span_110](end_span)
+1. անուն - name
+2. ապրել - to live
+3. կհանդիպենք / առայժմ - see you later
+4. առավոտ - morning
+5. արև - sun
+6. բարի առավոտ - good morning
+7. բարի գիշեր - good night
+8. բարի երեկո - good evening
+9. բարի լույս - good morning
+10. բարի օր - good day
+11. բարև - hi / hello
+12. դու - you
+13. դուք - you (pl.)
+14. գիրք - book
+15. ես - I
+16. երեխա - child
+17. ինչ - what
+18. ինչպես - how
+19. իսկ - and, too
+20. ծանոթանալ - to meet
+21. կհանդիպենք - will meet
+22. մենք - we
+23. նա - he / she
+24. նրանք - they
+25. նույնպես - too
+26. շնորհակալություն - thank you
+27. ողջույն - hi / hello
+28. սառնարան - refrigerator
+29. սեղան - table
+30. սենյակ - room
+31. տղա - boy
+32. տուն - house
+33. րոպե - minute
+34. ցտեսություն - goodbye
+35. ուսուցիչ - teacher
+36. ուտել - to eat
+37. ուրախ - glad
