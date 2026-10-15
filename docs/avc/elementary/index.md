@@ -3,6 +3,7 @@
 Select a lesson to review study materials:
 
 * [Lesson 1](lesson-1/index.md)
+  * [Grammar](armenian_lesson1_grammar)
 * [Lesson 2](lesson-2/index.md)
 * [Lesson 3](lesson-3/index.md)
 * [Lesson 4](lesson-4/index.md)
